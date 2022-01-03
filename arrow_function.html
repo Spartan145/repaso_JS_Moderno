@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <span>Hola mundo</span>
+        <script>
+            const obj = {
+                functionNormal: function(){
+                    console.log('This normal function',this);
+                },
+                functionArrow: () => {
+                    console.log('This arrow function', this);
+                }
+            }
+
+            console.log('This of the environment',this);
+            obj.functionNormal();
+            obj.functionArrow();
+        </script>
+    </body>
+</html>
